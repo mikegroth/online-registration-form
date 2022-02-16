@@ -14,6 +14,7 @@ body {
 
 .newsletter-label {
     display: block;
+    padding: 10px 0;
 }
 
 ul {
@@ -40,11 +41,21 @@ main, footer {
     margin: auto;
 }
 
-input, select {
+input, select, button {
     width: 100%;
     display: block;
     margin: auto;
     padding: 10px 10px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+textarea {
+    height: 150px;
+    width: 100%;
+    border: none;
+    
 }
 
 header, footer, .main-intro {
@@ -53,15 +64,52 @@ header, footer, .main-intro {
 
 fieldset {
     border: none;
-    padding: 0;
-    margin: 0;
+    border-top: 2px solid rgb(39, 44, 71);
+    padding: 10px 0;
+    margin: 4px 0;
 }
 
 legend, label {
     text-align: left;
+    font-size: .95em;
 }
 
 h2, legend {
     font-weight: bold;
-    font-weight: .5em;
+    font-size: 1em;
+}
+
+h2 {
+    margin-bottom: 5px;
+}
+
+.main-intro p {
+    margin-top: 10px;
+    font-size: .9rem;
+    opacity: 70%;
+}
+
+.main-intro {
+    border-bottom: 4px solid rgb(39, 44, 71);
+}
+
+.newsletter input {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    padding-right: 10px;
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+
+    main, footer {
+        max-width: 50%;
+    }
+
+    input, select {
+        display: inline-block;
+    }
 }
