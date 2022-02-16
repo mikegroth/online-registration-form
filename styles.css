@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Merriweather', serif, sans-serif;
+    line-height: 1.5;
+}
+
+body {
+    background: beige;
+    color: rgb(39, 44, 71);
+}
+
+.newsletter-label {
+    display: block;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0px;
+
+}
+
+ul li {
+    display: block;
+}
+
+header {
+    margin: 0;
+    padding: 1em 0;
+    background: rgb(39, 44, 71);
+    text-transform: uppercase;
+    font-size: .6em;
+    color: white;
+}
+
+main, footer {
+    max-width: 90%;
+    margin: auto;
+}
+
+input, select {
+    width: 100%;
+    display: block;
+    margin: auto;
+    padding: 10px 10px;
+}
+
+header, footer, .main-intro {
+    text-align: center;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+legend, label {
+    text-align: left;
+}
+
+h2, legend {
+    font-weight: bold;
+    font-weight: .5em;
+}
