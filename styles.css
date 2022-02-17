@@ -20,11 +20,6 @@ body {
 ul {
     list-style: none;
     padding-left: 0px;
-
-}
-
-ul li {
-    display: block;
 }
 
 header {
@@ -55,9 +50,11 @@ input, select, button {
 
 input:focus, select:focus, textarea:focus {
     border: 2px solid rgb(39, 44, 71);
+    transition: background-color 1s ease;
+    background-color:rgb(233, 233, 233);
 }
 
-input[id$="zip"] {
+input[id^="zip"] {
     margin-left: 0;
     max-width: 50%;
 }
@@ -137,15 +134,20 @@ footer {
     margin-bottom: 20em;
 }
 
-input[id="full-name"]::placeholder,
-input[id="email-address"]::placeholder {
+::placeholder {
     color:gray;
     font-style: italic;
     font-size: .9em;
     text-align: right;
 }
 
+textarea::placeholder{
+    text-align: left;
+}
 
+#state {
+    color: gray;
+}
 
 
 @media screen and (min-width: 768px) {
