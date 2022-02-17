@@ -39,6 +39,7 @@ header {
 main, footer {
     max-width: 90%;
     margin: auto;
+    padding-bottom: 15px;
 }
 
 input, select, button {
@@ -48,14 +49,27 @@ input, select, button {
     padding: 10px 10px;
     border: none;
     margin-top: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+input[id$="zip"] {
+    margin-left: 0;
+    max-width: 50%;
+}
+
+button {
+    color:white;
+    background-color: rgb(16, 171, 182);
+    font-weight: bold;
+    border-radius: 5px;
 }
 
 textarea {
-    height: 150px;
+    height: 110px;
+    max-width: 100%;
     width: 100%;
     border: none;
-    
+    border-radius: 5px;
 }
 
 header, footer, .main-intro {
@@ -76,7 +90,8 @@ legend, label {
 
 h2, legend {
     font-weight: bold;
-    font-size: 1em;
+    font-size: 1.2em;
+    padding-top: 15px;
 }
 
 h2 {
@@ -85,6 +100,7 @@ h2 {
 
 .main-intro p {
     margin-top: 10px;
+    margin-bottom: 30px;
     font-size: .9rem;
     opacity: 70%;
 }
@@ -95,21 +111,58 @@ h2 {
 
 .newsletter input {
     display: inline-block;
-    width: 10px;
-    height: 10px;
-    padding-right: 10px;
+    width: 12px;
+    height: 12px;
 }
 
+.news-btn, .format-btn {
+    padding-left: 15px;
+}
+
+footer {
+    color: grey;
+    font-style: italic;
+    font-size: .8em;
+}
 
 
 
 @media screen and (min-width: 768px) {
 
     main, footer {
-        max-width: 50%;
+        max-width: 60%;
     }
 
-    input, select {
-        display: inline-block;
+    ul {
+        display:flex;
     }
+
+
+    
+
+    
+
+    
+
+
+
+    
+
+
+
+    input[id$="zip"] {
+        max-width: 33%;
+    }
+    
+
+    
+
+
+
+
+
+
+
+
+
 }
