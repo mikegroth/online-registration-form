@@ -50,6 +50,11 @@ input, select, button {
     border: none;
     margin-top: 10px;
     margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+input:focus, select:focus, textarea:focus {
+    border: 2px solid rgb(39, 44, 71);
 }
 
 input[id$="zip"] {
@@ -72,13 +77,19 @@ textarea {
     border-radius: 5px;
 }
 
+
 header, footer, .main-intro {
     text-align: center;
 }
 
+.border {
+    border-top: 2px solid rgb(39, 44, 71);
+    border-bottom: 2px solid rgb(39, 44, 71);
+    margin-top: 3px;
+}
+
 fieldset {
     border: none;
-    border-top: 2px solid rgb(39, 44, 71);
     padding: 10px 0;
     margin: 4px 0;
 }
@@ -123,7 +134,17 @@ footer {
     color: grey;
     font-style: italic;
     font-size: .8em;
+    margin-bottom: 20em;
 }
+
+input[id="full-name"]::placeholder,
+input[id="email-address"]::placeholder {
+    color:gray;
+    font-style: italic;
+    font-size: .9em;
+    text-align: right;
+}
+
 
 
 
@@ -133,36 +154,22 @@ footer {
         max-width: 60%;
     }
 
-    ul {
+    .container, .container-2 {
         display:flex;
+        align-items: center;
+        justify-content: space-between;
     }
 
+    .container input, .container select {
+        width: 75%;
+        align-self: flex-end;
+        margin: 10px 0;
+    }
 
-    
-
-    
-
-    
-
-
-
-    
-
-
-
-    input[id$="zip"] {
-        max-width: 33%;
+    .container label, .container-2 input, .container-2 label {
+        width: 25%;
     }
     
-
     
-
-
-
-
-
-
-
-
 
 }

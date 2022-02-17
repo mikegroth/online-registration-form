@@ -24,22 +24,20 @@
 
         <div>
             
-            <form action="index.html" method="put">
+            <form action="index.html" method="post">
+                <div class="border">
                 <fieldset>
-                    <div class="contact-info">
-                        <legend>Contact Information</legend>
-                    </div>
-
+                    <legend class="contact-info">Contact Information</legend>
                     <ul>
                         <li class="container">
                             <label for="full-name">Full Name</label>
-                            <input type="text" id="full-name" name="full-name">
+                            <input type="text" id="full-name" name="full-name" placeholder="required">
                         </li>
 
                         <li class="container">
                             <label for="email-address">Email Address</label>
-                            <input type="email" id="email" name="email">
-                        </li class="container">
+                            <input type="email" id="email-address" name="email" placeholder="required">
+                        </li>
 
                         <li class="container">
                             <label for="telephone">Phone Number</label>
@@ -58,7 +56,7 @@
 
                         <li class="container">
                             <label for="state">State</label>
-                            <select name="state" id="state-select">
+                            <select name="state" id="state">
                                 <option value="placeholder">Choose State</option>
                                 <option value="CA">California</option>
                                 <option value="NY">New York</option>
@@ -66,18 +64,17 @@
                             </select>
                         </li>
 
-                        <li>
+                        <li class="container-2">
                             <label for="zip">Zip Code</label>
                             <input type="text" id="zip" name="zip-address">
                         </li>
                     </ul>
                 </fieldset>
-                                               
-                <fieldset class="newsletter">
-                    <div>
-                    <legend>Newsletter</legend>
-                    </div>
 
+                </div>
+                
+                <fieldset class="newsletter">
+                    <legend>Newsletter</legend>
                     <div>
                         <label class="newsletter-label">Select the newsletters you would like to receive</label>
                         <input type="checkbox" id="html-news" name="newsletter" value="receive-html"><label for="html-news" class="news-btn">HTML News</label><br>
@@ -86,14 +83,14 @@
                     </div>
 
                     <div>
-                        <label for="newsletter-format" class="newsletter-label">Newsletter format</label>
+                        <label class="newsletter-label">Newsletter format</label>
                         <input type="radio" id="html-format" name="format" value="html-format"><label for="html-format" class="format-btn">HTML</label><br>
                         <input type="radio" id="plain-format" name="format" value="plain-format"><label for="plain-format" class="format-btn">Plain text</label>
                     </div>
                     
                     <div>
                         <label for="other-topics" class="newsletter-label">Other topics you'd like to hear about</label>
-                        <textarea id="other-topics" ></textarea>
+                        <textarea id="other-topics" name="other-topics"></textarea>
                     </div>
                 </fieldset>
 
